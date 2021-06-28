@@ -46,4 +46,7 @@ Route::post('trackternak', [TrackTernakController::class, 'store']);
 // Route::post('trackternak/updated', [TrackTernakController::class, 'update']);
 
 
-Route::get('getuser', [AdminController::class, 'user']);
+Route::get('getuser', [AdminController::class, 'user']); 
+Route::get('detailuser/{id}', [AdminController::class, 'detailUser']); 
+Route::post('detailternak', [AdminController::class, 'getTernak']); 
+Route::post('detailhistory', [AdminController::class, 'getHistory']); 
